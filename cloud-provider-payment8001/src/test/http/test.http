@@ -1,0 +1,4 @@
+GET http://localhost:8001/payment/get/1001
+Accept: application/json
+
+###
