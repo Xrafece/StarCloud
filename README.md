@@ -24,11 +24,10 @@ Sentinel：[https://github.com/alibaba/Sentinel/wiki/%E4%BB%8B%E7%BB%8D](https:/
 
 在Hystrix基础上增加了流控规则和持久化,alibaba体系的一员。
 
+## 序列
 
-
-
-
-
-
-
-
+<module>cloud-provider-payment8001</module>
+<module>cloud-common-entity</module>
+<module>cloud-consumer-order80</module>
+<module>cloud-eureka-server7001</module>
+<module>cloud-eureka-server7002</module>
