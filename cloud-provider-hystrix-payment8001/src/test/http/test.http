@@ -1,0 +1,8 @@
+GET http://localhost:8001/payment/hystrix/ok/12
+Accept: application/json
+
+###
+GET http://localhost:8001/payment/hystrix/timeout/12
+Accept: application/json
+
+###
