@@ -27,14 +27,14 @@ public class OrderHystrixController {
         return result;
     }
 
-    // yaml 配置文件添加 feign.hystrix.enable=true 以后，约束时间不生效
+    // yaml 配置文件添加 feign.hystrix.enable=true 以后，约束时间不生效, 但是可以在 yaml 中设置约束时间。
     // @HystrixCommand(fallbackMethod = "paymentTimeOutFallbackMethod",commandProperties = {
     //         @HystrixProperty(name="execution.isolation.thread.timeoutInMilliseconds",value="5000")
     // })
     @GetMapping("/consumer/payment/hystrix/timeout/{id}")
-    // @HystrixCommand(fallbackMethod = "paymentTimeOutFallbackMethod")
+    @HystrixCommand(fallbackMethod = "paymentTimeOutFallbackMethod")
     // 使用全局 fallback 方法
-    @HystrixCommand
+    // @HystrixCommand
     public String paymentInfo_TimeOut(@PathVariable("id") Integer id) {
         // int age = 10 / 0;
         String result = paymentHystrixService.paymentInfo_TimeOut(id);
