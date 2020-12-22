@@ -27,9 +27,12 @@ Sentinel：[https://github.com/alibaba/Sentinel/wiki/%E4%BB%8B%E7%BB%8D](https:/
 ## 序列
 
 * <module>cloud-provider-payment8001</module>
-* <module>cloud-common-entity</module>
-* <module>cloud-consumer-order80</module>
-* <module>cloud-eureka-server7001</module>
-* <module>cloud-eureka-server7002</module>
-* <module>cloud-provider-payment8002</module>
-* <module>cloud-consumer-feign-order80</module>
+*  <module>cloud-common-entity</module>
+*  <module>cloud-consumer-order80</module>
+*  <module>cloud-eureka-server7001</module>
+*  <module>cloud-eureka-server7002</module>
+*  <module>cloud-provider-payment8002</module>
+*  <module>cloud-consumer-feign-order80</module>
+*  <module>cloud-provider-hystrix-payment8001</module>
+*  <module>cloud-consumer-feign-hystrix-order80</module>
+*  <module>cloud-consumer-hystrix-dashboard9001</module>
