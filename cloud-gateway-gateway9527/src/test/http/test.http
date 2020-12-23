@@ -14,3 +14,7 @@ GET http://localhost:8001/payment/lb
 Accept: application/json
 
 ###
+GET http://localhost:9527/account/history
+Accept: application/json
+
+###
